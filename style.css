@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=IBM+Plex+Mono&family=Itim&family=Lobster&family=Pacifico&family=Rajdhani:wght@300&family=Stick+No+Bills:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(images/brushing.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+.sideNav {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    background-color: #222;
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+    padding-top: 60px;
+    display: none;
+}
+
+.sideNav a {
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    color: #d1d1d1;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.sideNav a button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: gainsboro;
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+}
+
+.sideNav a:hover {
+    color: #273d9b;
+
+    text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8),
+        -3px 0px 7px rgba(81, 67, 21, 0.8),
+        0px 4px 7px rgba(81, 67, 21, 0.8);
+    transform: translateX(10px);
+}
+
+.sideNav .closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+header nav {
+    background: linear-gradient(to right, #da734e, #273d9b);
+    height: 100%;
+    opacity: 0.8;
+}
+
+header nav #sec .menubtn {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+    color: gainsboro;
+    border-radius: 10%;
+}
+
+header nav #sec {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 15%;
+    transition: background-color 0.5s ease;
+}
+
+header nav #sec.change {
+    background: linear-gradient(to right, #da734e, #273d9b);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+header nav #sec ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav #sec ul img {
+    margin: 33px;
+}
+
+header nav #sec ul li {
+    padding: 35px;
+    list-style: none;
+    font-size: larger;
+}
+
+header nav #sec ul li a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-family: Bebas Neue;
+    letter-spacing: 3px;
+    position: relative;
+    text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
+}
+
+header nav #sec ul li a::after {
+    content: '';
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background: #d6420d;
+    height: 3px;
+    transition: 0.6s;
+}
+
+header nav #sec ul li a:hover::after {
+    width: 100%;
+}
+
+header #sec p {
+    font-size: xx-large;
+    font-family: Lobster;
+    padding: 23px;
+    color: #7988cb;
+    text-shadow: -1px -1px 3px #020202,
+        2px 2px 4px #1b1b1b;
+}
+
+header nav .para {
+    text-align: center;
+    position: relative;
+    top: 200px;
+    font-size: 40px;
+    font-family: Stick No Bills;
+    color: gainsboro;
+    letter-spacing: 5px;
+    word-spacing: 15px;
+    text-shadow: -1px -1px 3px #020202,
+        2px 2px 4px #1b1b1b;
+}
+
+header nav .para a .buttton {
+    font-size: medium;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    font-family: Bebas Neue;
+    padding: 15px;
+    width: 200px;
+    outline: none;
+    border-radius: none;
+    transition: border-radius 0.9 ease-in;
+}
+
+header nav .para a .buttton:hover {
+    transform: translateY(-10px);
+    border-radius: 30px;
+    border: 1px solid orange;
+    color: white;
+    background-color: #d6420d;
+    text-shadow: -1px -1px 3px #02020230,
+        2px 2px 4px #1b1b1b8b;
+}
+
+main section {
+    background: linear-gradient(to right, #E8CBC0, #636FA4);
+}
+
+#about {
+    min-height: 100vh;
+    width: 100%;
+}
+
+#about h3 {
+    font-family: Bebas Neue;
+    letter-spacing: 3px;
+    text-decoration: underline;
+
+}
+
+#about .contain {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#about .contain img {
+    border-radius: 3%;
+    border: 1px solid black;
+    width: 30%;
+    height: 390px;
+}
+
+#about .contain p {
+    font-family: Itim;
+    width: 60%;
+}
+
+main section .about {
+    padding: 65px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main section .about .aboutsection {
+    width: 50%;
+    border-radius: 40px;
+    height: 100%;
+    padding: 15px;
+    background: linear-gradient(to right, #E8CBC0, #636FA4);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+main section .about .aboutsection:hover {
+    background: linear-gradient(to right, #da734e, #273d9b);
+}
+
+main section .about .aboutsection img {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+main section .about .aboutsection .info {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+main section .about .aboutsection .info h2 {
+    font-family: Bebas Neue;
+}
+
+#services {
+    padding-top: 70px;
+    background: linear-gradient(to right, #da734e, #273d9b);
+    min-height: 100vh;
+}
+#services h3{
+    font-family: Bebas Neue;
+    text-decoration: underline;
+    letter-spacing: 4px;
+}
+
+#services .image-text{
+    display: flex;
+    flex-wrap: wrap;
+}
+#services .image-text img{
+    width:40%;
+    height:300px;
+    margin: 70px;
+    border: 3px solid black;
+    border-radius: 3%;
+}
+
+
+#services .image-text .p{
+    color: #3d1818;
+    margin: 75px;
+    display: block;
+    width: 40%;
+}
+
+#services .image-text .p a button{
+    font-size: medium;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-family: Bebas Neue;
+    padding: 10px;
+    width: 200px;
+    outline: none;
+    border-radius: none;
+    transition: border-radius 0.9 ease-in;
+}
+
+#services .image-text .p a button:hover{
+    transform: translateY(-10px);
+    border-radius: 30px;
+    border: 1px solid orange;
+    color: white;
+    background-color: #d6420d;
+    text-shadow: -1px -1px 3px #02020230,
+        2px 2px 4px #1b1b1b8b;
+}
+#contact {
+    min-height: 100vh;
+    padding: 40px;
+}
+
+#contact .container {
+    font-family: Itim;
+    height: 100%;
+    padding: 20px;
+    width: 40%;
+    background-color: #E8CBC0;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+#contact .container h2 {
+    text-align: center;
+}
+
+#contact .container form .buton {
+    letter-spacing: 2px;
+    font-family: Bebas Neue;
+    padding: 10px;
+    width: 150px;
+    outline: none;
+    border-radius: 30px;
+}
+
+#contact .container form .buton:hover {
+    background-color: black;
+    color: white;
+}
+
+#contact i {
+    color: black;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    border: 1px solid black;
+    line-height: 50px;
+    border-radius: 50%;
+    height: 50px;
+}
+
+#contact i:hover {
+    background-color: #020202;
+    color: #E8CBC0;
+}
+
+footer p {
+    margin-bottom: 0;
+    color: blanchedalmond;
+    text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
+    font-family: IBM Plex Mono;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    text-align: center;
+    background: linear-gradient(to right, #da734e, #273d9b);
+}
+@media only screen and (max-width: 748px){
+ 
+    #services .image-text .dentalI{
+        flex-direction: column;
+    }
+
+    #services .image-text .dentalC{
+        border: 1px solid black;
+        flex-direction: column;
+    }
+    #services .image-text .dentalP{
+        border: 1px solid black;
+        flex-direction: column;
+    }
+    #services .image-text .oralH{
+        border: 1px solid black;
+        flex-direction: column;
+    }
+
+    #services .image-text .dentalT{
+        flex-direction: column;
+    }
+    
+    #services .image-text img{
+        width:90%;
+        margin: 20px 30px;
+    }
+
+    #services .image-text .p{
+        width:90%;
+        margin: 20px 30px;
+    }
+    
+    #services .image-text .p a button{
+        margin-top: 5px ;
+
+    }
+   
+    #contact .container{
+        width: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 798px) {
+    main section .about .aboutsection img {
+        height: 50%;
+    }
+
+    main section .about .aboutsection .info {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 636px) {
+
+    main section .about .aboutsection .info {
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    header {
+        height: 120vh;
+    }
+
+
+    #services {
+        min-height: 120vh;
+    }
+
+    #contact {
+        min-height: 120vh;
+    }
+}
+
+@media only screen and (max-width: 462px) {
+    main section .about .aboutsection img {
+        height: 25%;
+    }
+
+    main section .about .aboutsection .info {
+        font-size: xx-small;
+    }
+
+    #contact{
+        height: 60vh;
+    }
+
+    #contact .container{
+        height: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 424px) {
+    main section .about .aboutsection img {
+        height: 25%;
+    }
+
+    main section .about .aboutsection .info {
+        font-size: 5px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #about .contain img{
+        height: 250px;
+    }
+    #contact .container{
+        width: 80%;
+    }
+    #contact .container form .buton {
+        letter-spacing: 2px;
+        font-family: Bebas Neue;
+        padding: 10px;
+        width: 100px;
+        outline: none;
+        border-radius: 30px;
+    }
+
+}
+@media screen and (max-width: 918px) {
+    header nav #sec .menubtn {
+        display: flex;
+    }
+
+    nav #sec .navLinks {
+        display: none;
+    }
+
+    .sideNav {
+        display: block !important;
+    }
+    #about .contain{
+        width: 100%;
+        height: 80%;
+        display:block;
+    }
+    #about .contain img {
+        align-self: center;
+        width: 100%;
+        height: 300px;
+        margin-top: 10px;
+    }
+    
+    #about .contain p {
+        font-size: small;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+
+
